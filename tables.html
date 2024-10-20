@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>I222594_C_assing02_tables</title>
+        <link rel="stylesheet" href="tables.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="tables.js"></script>
+        <script type="importmap">
+            {
+              "imports": {
+                "@google/generative-ai": "https://esm.run/@google/generative-ai"
+              }
+            }
+          </script>
+    </head>
+    <body>
+        <div id="sidebar">
+            <img id="logo" src="logo.png">
+            <a href="dashboard.html"><div class="buton"><p>Dashboard</p></div></a>
+            <a href="tables.html"><div class="buton"><p>Tables</p></div></a>
+        </div>
+        <div id="mainpage">
+            <div><div class="search"><img src="./images/search1.png"></div></div>
+            <div><img src="./images/sanaan.png" class="pfp"></div>
+            </div>
+            <div class="horizontalbar">
+                <div class="chartdecor" id="table_section">
+                    <div><input type="text" id="get_city_name" placeholder="Enter city Name">
+                    <div><button class="buton" id="searchbut" onclick="getweatherdata()">Search</button></div>
+                <table id="forecast_table">
+                    <tr id="time_row" ><th>Time</th></tr>
+                    <tr id="temperature_row" ><th>Temperature</th></tr>
+                    <tr id="humidity_row" ><th>Humidity</th></tr>
+                    <tr id="windspeed_row" ><th>Windspeed</th></tr>
+                    <tr id="description_row" ><th>Description</th></tr>
+                    <tr id="icon_id_row" ><th>Id</th></tr>
+                    <tr id="icon_row" ><th>Icon</th></tr>
+                </table>
+                </div>
+                    
+                </div>
+                <div class="chartdecor" id="chatbot_section">
+                    <div><input type="text" id="get_gem_message" placeholder="Enter Question for Bot">
+                        <div><button class="buton" id="sendGEm" onclick="sendtogem()">Search</button></div>
+                        <div><p id="sent_message">Response:</p></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

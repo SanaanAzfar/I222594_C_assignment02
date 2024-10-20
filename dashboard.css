@@ -1,0 +1,158 @@
+.horizontalbar
+{
+    display: flex;
+    column-gap: 20px;
+    margin-left: 250px;
+}
+
+.horizontalbar_short
+{
+    display: flex;
+    column-gap: 300px;
+    margin-left: 50px;
+}
+body
+{background-color:   #282828;
+    max-width: max-content;
+    margin:auto;
+    vertical-align: middle;
+}
+
+.search
+{
+    background-color:gray;
+    border-radius: 10px;
+    width: 100vh;
+    margin-left: 420px;
+    margin-top: 50px;
+    border: #282828;
+    border-style: ridge;
+    height: 34px;
+    color: white;
+    position: relative;
+}
+.search:hover
+{
+    background-color: rgb(63, 60, 60);
+}
+
+#sidebar
+{
+    background-color: #141414;
+    width: 250px;
+    height: 100vh;
+    position:fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    border-width: 4px;
+    border-style:groove;
+    border-radius: 8px;
+    max-width: max-content;
+    margin:auto;
+    vertical-align: middle;
+    z-index: 3;
+}
+
+#logo
+{
+    height: 100px;
+    width: 100px;
+    margin-left: 46px;
+}
+.buton
+{
+    position: relative;
+background-color:#320064;
+border-style:outset;
+border-color:#230046;
+border-width: 4px;
+width :30vb;
+height: 70px;
+position:relative;
+margin-bottom: 20px;
+margin-top: 20px;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+text-decoration:solid;
+font-size: 30px;
+text-align: center;
+color: white;
+z-index: 2;
+}
+.buton:hover
+{
+    background-color: #230046;
+
+}
+.weatherOnCity
+{
+    width: 150vh;
+    height: 300px;
+    background-color: gray;
+    margin-top: 40px;
+    border-radius: 10px;
+    margin-left: 250px;
+    border-width: 2px;
+    border-style: solid;
+    position: relative;
+}
+.pfp
+{
+border-width:4px;
+border-radius: 100%;
+border-color: black;
+border-style: solid;
+position:absolute;
+top: 20px;
+right: 30px;
+max-width: 6%;
+height: auto;
+}
+.chartdecor
+{
+    width: 300px;
+    height: 300px;
+    background-color:white;
+    margin-top: 40px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+}
+input
+{   position: relative;
+    background-color:pink;
+    border-color:black;
+    border-style: inset;
+    color: gray;
+    height: 40px;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    z-index:  2;
+}
+.get_result
+{
+    border-style: ridge;
+    border-color: black;
+    background-color: pink;
+    width: 330px;
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: relative;
+    z-index: 2;
+}
+#back_widget
+{
+    width: 150vh;
+    height: 300px;
+    position: absolute;
+    border-radius: 10px;
+    visibility: hidden;
+    z-index: 1;
+}
+#icon_weather
+{
+    position: relative;
+    z-index: 1;
+}
