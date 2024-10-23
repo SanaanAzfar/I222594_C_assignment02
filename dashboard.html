@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>I222594_C_assing02_dashboard</title>
+        <link rel="stylesheet" href="dashboard.css">
+        <script src="dashboard.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    <body >
+        <div id="sidebar">
+            <img id="logo" src="logo.png">
+            <a href="index.html"><div class="buton"><p>Dashboard</p></div></a>
+            <a href="tables.html"><div class="buton"><p>Tables</p></div></a>
+        </div>
+        <div id="mainpage">
+            <div><div class="search"><img src="./images/search1.png"></div></div>
+            <div><img src="./images/sanaan.png" class="pfp"></div>
+            <div class="weatherOnCity">
+                <img id="back_widget" src="">
+                    <div class="horizontalbar_short">
+                <div><input type="text" id="get_city_name" placeholder="Enter city Name">
+                <div><button class="buton" onclick="getweather()">Search</button></div></div>
+                <div>
+                <p id="setcity_name"  class="get_result">City Name:</p>
+                <p id="settemperature" class="get_result">Temperature:</p>
+                <p id="sethumidity" class="get_result">Humidity:</p>
+                <p id="setwindspeed" class="get_result">Wind Speed:</p>
+                <p id="setweatherdescription" class="get_result">Description:</p>
+                <p id="setweathericon" class="get_result">Icon:</p><img id="icon_weather" src=""></div> 
+                </div>
+            </div>
+            </div>
+            <div class="horizontalbar">
+                <canvas id="bar_chart"  class="chartdecor"></canvas>
+                <canvas id="dough_chart"  class="chartdecor"></canvas>
+                <canvas id="line_chart"  class="chartdecor"></canvas>
+            </div>
+        
+    </body>
+</html>
